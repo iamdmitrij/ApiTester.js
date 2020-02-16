@@ -1,0 +1,21 @@
+{
+  "name": "api-tester",
+  "version": "1.0.0",
+  "description": "The purpose of this app is to test given API in containerized fashion.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dmitrij",
+  "license": "MIT",
+  "devDependencies": {
+    "supertest": "^4.0.2"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "chalk": "^3.0.0",
+    "cheerio": "^1.0.0-rc.3",
+    "querystring": "^0.2.0",
+    "sanitizer": "^0.1.3"
+  }
+}
