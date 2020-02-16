@@ -1,8 +1,8 @@
 const http = require('axios');
-const httpUtils = require("./httpUtils.js");
-const baseUrl = process.env.TARGET_API;
 const chalk = require('chalk');
+const httpUtils = require("./httpUtils.js");
 const log = console.log;
+const baseUrl = process.env.TARGET_API;
 
 module.exports.assertCode = function (code) {
     http.get(baseUrl)
