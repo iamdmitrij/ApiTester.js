@@ -13,7 +13,7 @@ module.exports.assertCode = function (code) {
             postCode(cookie, token, code);
         })
         .catch(error => {
-            console.log(error);
+            log(error);
         });
 }
 
@@ -26,15 +26,15 @@ function postCode(cookie, token, code) {
             validateCode(code, response.data);
         })
         .catch(error => {
-            console.log(error);
+            log(error);
         });
 }
 
 function validateCode(code, response) {
     if (response.error) {
-        log(chalk.red(`Code "${code}" validation failed: ${response.error}.`));
+        log(chalk.red(`Code "${code}" validation failed: "${response.error}".`));
     }
     else {
-        log(chalk.green(`Code "${code}" validation passed with flying colors: ${response.result}.`));
+        log(chalk.green(`Code "${code}" validation passed with flying colors: "${response.result}".`));
     }
 }
