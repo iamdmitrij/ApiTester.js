@@ -9,7 +9,10 @@ module.exports.extractCsrfToken = function (response) {
 
 module.exports.getCookie = function (response) {
     var cookies = response.headers['set-cookie'];
-    return cookies[0];
+
+    if (cookies) {
+        return cookies[0];
+    }
 }
 
 module.exports.prepHttpRequest = function (cookie, token, code) {
