@@ -3,7 +3,7 @@ The purpose of this app is to test given API in containerized fashion. Written u
 ## Usage
 You can run this app as simple Node.js app:
 
-``node main.js``
+``node src/main.js``
 
 This app supports containerization. If you want to build this app locally you can use following command:
 
