@@ -17,3 +17,7 @@ If you run this app without any arguments, it will check against default valid c
 In order to customize your input please pass environment variable CODE_INPUT. Do note that you have set multiple code input by sepataring value with commas.
 
 ``docker run -e="CODE_INPUT=a,b,c" api-tester``
+
+To pull image from Docker registry use:
+
+``docker pull iamdmitrij/api-tester:1.0.0``
